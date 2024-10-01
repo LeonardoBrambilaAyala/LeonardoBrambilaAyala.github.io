@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-    <h1>{{ page.title }}</h1>
-    <div>{{ content }}</div>
+    <header>
+        <h1>{{ site.title }}</h1>
+        <nav>
+            <a href="{{ '/' | relative_url }}">Page</a>
+            <a href="{{ '/about' | relative_url }}">Sobre Nosotros</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        {{ content }}
+    </div>
 </body>
 </html>
