@@ -1,12 +1,12 @@
-/* Archivo: assets/css/style.css */
+/* Archivo: assets/css/style.scss */
 $primary-color: #4A90E2;
 $secondary-color: #f5f5f5;
-$background-color: #b4b4b4; // Color de fondo para la página
+$background-color: #007BFF; // Color de fondo azul
 $text-color: #333;
 $header-color: #444;
 
 body {
-    background-color: #b4b4b4; // Aplicar color de fondo a la página
+    background-color: $background-color; // Aplicar color de fondo azul a la página
     font-family: Arial, sans-serif; // Fuente general para el cuerpo
     margin: 0;
     padding: 0;
@@ -15,13 +15,13 @@ body {
 .cv-container {
     margin: 100px; // Espacio superior
     padding: 100px;
-object-fit: cover; /* Recorta la imagen si es necesario */
+    object-fit: cover; /* Recorta la imagen si es necesario */
 }
 
 .profile-photo {
     width: 100px;
     height: 100px;
-object-fit: cover; /* Recorta la imagen si es necesario */
+    object-fit: cover; /* Recorta la imagen si es necesario */
 }
 
 header {
@@ -75,4 +75,62 @@ footer {
     color: $text-color;
 }
 
+---
+layout: home
+title: Curriculum Vitae
+---
+
+<div class="cv-container">
+  <header>
+    <h1>Leonardo Brambila Ayala</h1>
+    <h2>Desarrollador Web</h2>
+  </header>
+
+  <section class="contact-info">
+    <h3>Información de Contacto</h3>
+    <p>Email: <a href="mailto:leonardo@example.com">leonardo@example.com</a></p>
+    <p>Teléfono: (123) 456-7890</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/leonardobram" target="_blank">linkedin.com/in/leonardobram</a></p>
+  </section>
+
+  <section class="education">
+    <h3>Educación</h3>
+    <ul>
+      <li>
+        <strong>Licenciatura en Desarrollo Web</strong> - Universidad Ejemplo (2018-2022)
+      </li>
+      <li>
+        <strong>Certificación en JavaScript</strong> - Academia Ejemplo (2021)
+      </li>
+    </ul>
+  </section>
+
+  <section class="experience">
+    <h3>Experiencia Laboral</h3>
+    <ul>
+      <li>
+        <strong>Desarrollador Web Junior</strong> - Empresa Ejemplo (2022-Presente)
+        <p>Responsable de desarrollar y mantener aplicaciones web utilizando JavaScript y Ruby on Rails.</p>
+      </li>
+      <li>
+        <strong>Prácticas en Desarrollo de Software</strong> - Compañía Ejemplo (2021)
+        <p>Participación en el desarrollo de un sistema de gestión de proyectos.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="skills">
+    <h3>Habilidades</h3>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Ruby on Rails</li>
+      <li>Git y GitHub</li>
+      <li>SCSS</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Leonardo Brambila Ayala</p>
+  </footer>
+</div>
 
