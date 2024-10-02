@@ -1,23 +1,61 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-</head>
-<body>
-    <header>
-        <h1>{{ site.title }}</h1>
-        <nav>
-            <a href="{{ '/' | relative_url }}">Home</a>
-            <a href="{{ '/about' | relative_url }}">Sobre Nosotros</a>
-        </nav>
-    </header>
+---
+layout: home
+title: Curriculum Vitae
+---
 
-    <div class="container">
-        {{ content }}
-    </div>
-</body>
-</html>
+<div class="cv-container">
+  <header>
+    <h1>Leonardo Brambila Ayala</h1>
+    <h2>Desarrollador Web</h2>
+  </header>
+
+  <section class="contact-info">
+    <h3>Información de Contacto</h3>
+    <p>Email: leonardo@example.com</p>
+    <p>Teléfono: (123) 456-7890</p>
+    <p>LinkedIn: linkedin.com/in/leonardobram</p>
+  </section>
+
+  <section class="education">
+    <h3>Educación</h3>
+    <ul>
+      <li>
+        <strong>Licenciatura en Desarrollo Web</strong> - Universidad Ejemplo (2018-2022)
+      </li>
+      <li>
+        <strong>Certificación en JavaScript</strong> - Academia Ejemplo (2021)
+      </li>
+    </ul>
+  </section>
+
+  <section class="experience">
+    <h3>Experiencia Laboral</h3>
+    <ul>
+      <li>
+        <strong>Desarrollador Web Junior</strong> - Empresa Ejemplo (2022-Presente)
+        <p>Responsable de desarrollar y mantener aplicaciones web utilizando JavaScript y Ruby on Rails.</p>
+      </li>
+      <li>
+        <strong>Prácticas en Desarrollo de Software</strong> - Compañía Ejemplo (2021)
+        <p>Participación en el desarrollo de un sistema de gestión de proyectos.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="skills">
+    <h3>Habilidades</h3>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Ruby on Rails</li>
+      <li>Git y GitHub</li>
+      <li>SCSS</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Leonardo Brambila Ayala</p>
+  </footer>
+</div>
+
+
 
