@@ -13,13 +13,15 @@ body {
 }
 
 .cv-container {
-    margin: 5px; // Espacio superior
-    padding: 5px;
+    margin: 100px; // Espacio superior
+    padding: 100px;
+object-fit: cover; /* Recorta la imagen si es necesario */
 }
 
 .profile-photo {
     width: 100px;
     height: 100px;
+object-fit: cover; /* Recorta la imagen si es necesario */
 }
 
 header {
