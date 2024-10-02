@@ -6,14 +6,14 @@ $text-color: #333;
 $header-color: #444;
 
 body {
-    background-color: $background-color; // Aplicar color de fondo a la página
+    background-color: #b4b4b4; // Aplicar color de fondo a la página
     font-family: Arial, sans-serif; // Fuente general para el cuerpo
     margin: 0;
     padding: 0;
 }
 
 .cv-container {
-    max-width: 800px;
+    max-width: 100px;
     margin: 20px auto; // Espacio superior
     padding: 20px;
     background-color: $secondary-color;
